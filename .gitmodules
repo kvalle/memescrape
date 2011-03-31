@@ -1,3 +1,0 @@
-[submodule "modules/sitscrape"]
-	path = modules/sitscrape
-	url = git@github.com:petterw/sitscrape.git
