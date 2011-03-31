@@ -1,4 +1,1 @@
-This bot combines various other web scraping bots into one codebase.
-
-IRC code from from github.com/emagnus, sit dinner code from /petterw, 
-news code from /snorrec, and meme code from /kvalle.
+Scraper module for the mlvn IRC-bot, fetching definition of memes from knowyourmeme.com.
