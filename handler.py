@@ -21,7 +21,7 @@ class MemeHandler:
                 line = meme.encode('utf-8', 'ignore')
                 print 'found:',line[:line.find(':')]
             else:
-                print 'found: nothing :('
+                print 'found nothing :('
                 line = 'sorry, fant ikke mem.. :( '
             return [line]
 
@@ -30,11 +30,6 @@ def fetch(url):
     opener.addheaders = [("User-agent", "meme-bot")]
     response = opener.open(url)
     return response.read()
-
-def mangle(string):
-    """ Hacky fix for Twisted unicode issues and general charset conversion problems.
-    """
-    return reduce(lambda x,y: x+y, map(unicode,string)).decode("utf-8").encode("utf-8")
 
 def search_meme(query):
     """Search knowyourmeme.com and retrieve name of first hit"""
